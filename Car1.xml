@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Vehicle>
+  <Picture Location="C:\Test files\Volvo-XC40-wins-What-Car-Car-of-the-Year-2018.jpg"></Picture>
+  <Classification>
+    <Brand>Volvo</Brand>
+    <Model>XC40</Model>
+    <ModelYear>2017</ModelYear>
+  </Classification>
+  <VehicleInfo>
+     <InTrafic>Yes</InTrafic>
+     <Colour>White</Colour>
+     <Registered>2017-03-31</Registered>
+     <TaxationMonth>February</TaxationMonth>
+  </VehicleInfo>
+  <Performance>
+     <Engine>
+        <Capacity>2.0</Capacity>
+        <Power>180</Power>
+     </Engine>
+     <Fuel>
+        <Type>Diesel</Type>
+        <FuelConsumption>5</FuelConsumption>
+     </Fuel>
+  </Performance>
+</Vehicle>

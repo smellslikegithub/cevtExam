@@ -1,0 +1,59 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Vehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Picture" maxOccurs="1" minOccurs="0">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Location"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Classification" maxOccurs="1" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Brand" maxOccurs="1" minOccurs="1"/>
+              <xs:element type="xs:string" name="Model" maxOccurs="1" minOccurs="1"/>
+              <xs:element type="xs:short" name="ModelYear" maxOccurs="1" minOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VehicleInfo" maxOccurs="1" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="InTrafic" maxOccurs="1" minOccurs="1"/>
+              <xs:element type="xs:string" name="Colour" maxOccurs="1" minOccurs="1"/>
+              <xs:element type="xs:date" name="Registered" maxOccurs="1" minOccurs="1"/>
+              <xs:element type="xs:string" name="TaxationMonth" maxOccurs="1" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Performance" maxOccurs="1" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Engine" maxOccurs="1" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="Capacity" maxOccurs="1" minOccurs="1"/>
+                    <xs:element type="xs:short" name="Power" maxOccurs="1" minOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Fuel" maxOccurs="1" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Type" maxOccurs="1" minOccurs="1"/>
+                    <xs:element type="xs:byte" name="FuelConsumption" maxOccurs="1" minOccurs="0"/>
+                    <xs:element type="xs:byte" name="Emmision" maxOccurs="1" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

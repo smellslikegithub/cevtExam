@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Vehicle>
+  <Picture Location="C:\Test files\Lynk & Co 01.jpg"></Picture>
+  <Classification>
+    <Brand>Lync & Co</Brand>
+    <Model>01</Model>
+    <ModelYear>2017</ModelYear>
+  </Classification>
+  <VehicleInfo>
+     <InTrafic>Yes</InTrafic>
+     <Colour>White</Colour>
+     <Registered>2017-03-31</Registered>
+  </VehicleInfo>
+  <Performance>
+     <Engine>
+        <Capacity>2.0</Capacity>
+        <Power>170</Power>
+     </Engine>
+     <Fuel>
+        <Type>Diesel</Type>
+        <FuelConsumption>5.5</FuelConsumption>
+		<Emmision>105</Emmision>
+     </Fuel>
+  </Performance>
+</Vehicle>
